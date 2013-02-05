@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="MessageBoard" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2012-10.1.8">
+  <Role name="MessageBoard_WebRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="DataConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="bala" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEFdY7AGGDh2lTQZlGjXe2gkwDQYJKoZIhvcNAQEBBQAEggEAJm+qY+TpAFrDBdeEur2H5YPlHjVlKkguwfC6DVq2rnZYuxfzo5crKc8RFBo3DgptSMr1J+LIGATUaJ/ZZ2sxRwIBvKx2OIr0oGzGPwOKuuA/aH88Ze5GDxabM0k8AB2scciKFz+7exsQtKEv0RbELeWA02hahlSzGcBzGfo5RqaXxnkJMFyjHAoJYGWdeMj/n772zSZaQfXqMC05ferCnm5yRQpFKWWS2cMqjfEXuf+KoMLmoAXZZ3s75MPvdU0dYKF7mMUhd4q5prAkzf7zY9OHYqxb6Ll1eBb5vuQP2vtmElD9o+15aw9OmgXqpV+TuX1gcM/Sag21wrv2eVNzHjAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECEowXD9/SmHZgBC2l/tcyNgLcWaX0dPWgJtl" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2014-02-05T23:59:59.0000000-08:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="A7B22A1983BE63BFA0B7DF6437948142A51EE96F" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
